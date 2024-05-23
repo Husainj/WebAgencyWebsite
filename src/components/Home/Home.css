@@ -206,13 +206,13 @@ rotate: 2deg;
 
     .homepage-container{
       flex-direction: column;
+    height: fit-content;
     }
 
     #model{
       height: 350px;
       width: 350px;
-   }
-   
+    }
   .text-container {
     margin-left: 10px;
   
