@@ -21,7 +21,7 @@ const Home = () => {
       </div>
       <div id='model'>
 
-      <Spline scene="https://prod.spline.design/mXTk7YWKBaFyqHvG/scene.splinecode" />
+      <Spline id='splineModel' scene="https://prod.spline.design/mXTk7YWKBaFyqHvG/scene.splinecode" />
       </div>
     </div>
     <div class="marquee" >

@@ -185,7 +185,7 @@ rotate: 2deg;
   @media (max-width: 480px) {
     h1 {
       font-size: 40px;
-     
+     font-weight: 800;
     }
   
     .sparkle {
@@ -206,13 +206,22 @@ rotate: 2deg;
 
     .homepage-container{
       flex-direction: column;
-    height: fit-content;
+    
     }
 
     #model{
-      height: 350px;
-      width: 350px;
+    visibility: hidden;
     }
+
+    #splineModel{
+    
+      visibility: hidden;
+    }
+
+.marquee{
+  margin-top: 35px;
+}
+
   .text-container {
     margin-left: 10px;
   
