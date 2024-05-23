@@ -11,6 +11,7 @@ body {
   }
   
   .navbar {
+    
     background-color: #ffffff;
     border-radius: 40px;
     display: flex;
@@ -54,7 +55,7 @@ body {
   }
   
   .nav-item:hover {
-    color: #007bff;
+    color: #919191;
   }
   
   /* Responsive Styles */
@@ -66,6 +67,7 @@ body {
 
 .navbar{
     height: max-content;
+   
 }
 
     .nav-toggle {
@@ -76,7 +78,14 @@ body {
       display: none;
       flex-direction: column;
       align-items: center;
-      width: 100%;
+      width: 50%;
+      position: absolute;
+      top: 80px;
+      right: 10px;
+      background-color: #ffffff;
+      box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+      padding: 10px 0;
+      border-radius: 40px;
     }
   
     .nav-list.nav-list-open {

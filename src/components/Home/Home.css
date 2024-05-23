@@ -1,0 +1,222 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #fff4d1;
+  }
+  
+  .homepage-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh;
+    text-align: left;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  
+  .text-container {
+    margin-left: 30px;
+    max-width: 600px;
+    padding: 20px;
+  }
+  
+  h1 {
+    font-size: 52px;
+    font-weight: 800;
+    line-height: 1.2;
+    margin: 0 0 20px;
+  }
+  
+  .sparkle {
+    display: inline-block;
+    font-size: 48px;
+    vertical-align: middle;
+  }
+  .cta-button {
+    
+    text-align: center;
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 25px;
+    font-weight: bold;
+    color: black;  /* You can keep this line for black text */
+    background-color: #ffcc00;
+    border: 2px solid black;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
+    width: 180px;
+    height: 62px;
+    position: relative;
+  }
+  
+  .cta-button::before,
+  .cta-button::after {
+   
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: inherit;
+    border-radius: inherit;
+    transform: translateZ(0);
+    transition: inherit;
+  }
+  
+  .cta-button::before {
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+  }
+  
+  .cta-button::after {
+    background-color: #ffdd33; /* Lighter shade on hover for contrast */
+  }
+  
+  .cta-button:hover {
+    transform: translateY(-5px) rotateX(-5deg); /* Slight tilt and elevation on hover */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); /* Enhanced shadow on hover */
+  }
+  
+  .cta-button:hover::before {
+    transform: translateZ(20px); /* Move front layer forward on hover */
+  }
+  
+  .cta-button:hover::after {
+    transform: translateZ(-20px); /* Move back layer backward on hover (creates depth) */
+  }
+  
+  
+  
+  .indicator-container {
+    display: flex;
+    margin-top: 25px;
+  }
+  
+  .indicator {
+    
+    width: 45px;
+    height: 45px;
+    background-color: #d3d3d3;
+    border-radius: 50%;
+    margin: 0 10px;
+    position: relative;  /* Required for pseudo-elements */
+    transition: transform 0.2s ease-in-out, box-shadow 0.3s ease-in-out;  /* Combined transition */
+  }
+  
+  .indicator::before {
+  
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: inherit;
+    border-radius: inherit;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);  /* Subtle shadow for depth */
+    transform: translateZ(0);  /* Initial z-axis position */
+    transition: inherit;
+  }
+  
+  .indicator:hover {
+    transform: translateY(-3px) rotateX(-5deg);  /* Slight tilt and elevation */
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);  /* Enhanced shadow on hover */
+  }
+  
+
+  
+  
+#model{
+   height: 800px;
+   width: 800px;
+}
+
+
+.marquee {
+  position: relative;
+  width: 100vw;
+  max-width: 100%;
+  height: 40px;
+  overflow-x: hidden;
+  background-color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+  font-size: 25px;
+font-weight: bold;
+margin-top: -25px;
+rotate: 2deg;
+
+}
+
+.track {
+  position: absolute;
+  white-space: nowrap;
+  will-change: transform;
+  animation: marquee 32s linear infinite;
+}
+
+@keyframes marquee {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+
+
+  /* Responsive Styles */
+  /* @media (max-width: 768px) {
+    h1 {
+      font-size: 36px;
+    }
+  
+    .sparkle {
+      font-size: 36px;
+    }
+  
+    .cta-button {
+      font-size: 14px;
+      padding: 8px 16px;
+    }
+  
+    .indicator {
+      width: 40px;
+      height: 40px;
+    }
+  } */
+  
+  @media (max-width: 480px) {
+    h1 {
+      font-size: 40px;
+     
+    }
+  
+    .sparkle {
+      font-size: 28px;
+    }
+  
+    .cta-button {
+     font-size: 20px;
+     height: 50px;
+     margin-top: 10px;
+     width: 150px;
+    }
+  
+    .indicator {
+      width: 45px;
+      height: 45px;
+    }
+
+    .homepage-container{
+      flex-direction: column;
+    }
+
+    #model{
+      height: 350px;
+      width: 350px;
+   }
+   
+  .text-container {
+    margin-left: 10px;
+  
+  }
+
+  }
+  
